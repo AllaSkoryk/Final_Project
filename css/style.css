@@ -4,24 +4,21 @@
     box-sizing: border-box;
 }
 
-html {
-    height: 100%;
-}
-
-body {
+html, body {
     margin: 0;
     padding: 0;
     height: 100%;
-    background-image: url("/images/mainsofa.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
-    background-size: cover;
 }
 
 .container {
-    min-height: 100vh;
+    min-width: 1440px;
+    height: 1084px;
+    background-image: url("/images/mainsofa.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
+
 
 header{
     display: flex;
@@ -126,6 +123,50 @@ button {
     align-items: center;
     justify-content: center;
 }
+
+
+.why-choose-us {
+    text-align: center;
+    padding: 4rem 0;
+    background-color: #f8f8f8;
+}
+
+.why-choose-us h2 {
+    margin-bottom: 2rem;
+    font-size: 2rem;
+}
+
+.value-propositions {
+    display: flex;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.value {
+    max-width: 300px;
+}
+
+.value h3 {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    color: black;
+}
+
+.value p {
+    margin-bottom: 1rem;
+}
+
+.more-info {
+    text-decoration: none;
+    color: black;
+    transition: color 0.3s ease;
+}
+
+.more-info:hover {
+    color: #555;
+}
+
 
 /*.footer {*/
 /*    background: #333;*/
