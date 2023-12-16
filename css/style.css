@@ -4,26 +4,35 @@
     box-sizing: border-box;
 }
 
+html {
+    height: 100%;
+}
+
 body {
-    background: #F7F7F7;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-image: url("/images/mainsofa.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
 }
 
-.container{
-    width: 1440px;
-    height: 1084px;
-    background-image: ;
+.container {
+    min-height: 100vh;
 }
 
-.navigation {
+header{
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    background: #333;
     color: #fff;
     padding: 1rem;
+    position: relative;
+    justify-content: space-between;
 }
 
-.logo{
+header .logo{
     color: #FFF;
     font-family: Gilroy-Bold;
     font-size: 28px;
@@ -34,22 +43,21 @@ body {
     text-transform: capitalize;
 }
 
-.navigation ul {
+header ul {
     list-style: none;
     display: flex;
 }
 
-.navigation ul li {
+header ul li {
     padding: 0 1rem;
 }
 
-.navigation ul li a {
+header ul li a {
     text-decoration: none;
     color: #fff;
 }
 
 .hero {
-    background: #eaeaea;
     padding: 2rem;
     text-align: center;
 }
@@ -84,9 +92,44 @@ button {
     cursor: pointer;
 }
 
-.footer {
-    background: #333;
-    color: #fff;
-    text-align: center;
-    padding: 1rem;
+.shopping-cart {
+    position: relative;
+    display: inline-block;
 }
+
+.shopping-cart img {
+    width: 30px;
+    height: auto;
+}
+
+.shopping-cart .cart-count {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background-color: orange;
+    color: white;
+    border-radius: 50%;
+    padding: 2px 6px;
+    font-size: 0.75rem;
+    min-width: 20px;
+    text-align: center;
+}
+
+
+.cart-count:empty:before {
+    content: '0';
+}
+
+
+.cart-count {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*.footer {*/
+/*    background: #333;*/
+/*    color: #fff;*/
+/*    text-align: center;*/
+/*    padding: 1rem;*/
+/*}*/
