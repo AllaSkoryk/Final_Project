@@ -342,26 +342,14 @@ header ul li a{
 
 }
 
-
-
 .product-card{
     display: flex;
     padding-bottom: 60px;
     flex-wrap: nowrap;
-    overflow: hidden;
-
 }
-
 
 .product-card .owl-carousel{
     display: flex;
-    /*gap: 40px;*/
-}
-
-.owl-carousel .owl-item img {
-    width: 134px;
-    height: 220px;
-    display: block; /* Это убирает дополнительные пробелы вокруг изображения */
 }
 
 
@@ -379,18 +367,18 @@ header ul li a{
 .view-all{
     color: #E58411;
     font-family: 'Gilroy-Medium', sans-serif;
-    font-size: 18px;
+    font-size: 20px;
     font-style: normal;
     font-weight: 400;
     line-height: 150%;
     text-decoration: none;
+    position: relative;
 }
 
 .view-all:after {
     content: "";
     background-image: url("../images/orange_arrow.svg");
     background-size: contain;
-    display: inline-block;
     margin-left: 5px;
     width: 48px;
     height: 24px;
@@ -399,19 +387,20 @@ header ul li a{
 }
 
 
+/*PHOTO + TEXT BLOCK*/
 
 
 .content-container {
     max-width: 1200px;
     margin: auto;
-    }
+}
 
 .content-block {
     display: flex;
     align-items: center;
     margin-bottom: 20px;
     background: white;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /*box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);*/
 }
 
 .content-block img {
@@ -443,6 +432,8 @@ header ul li a{
     font-weight: bold;
 }
 
+
+/*REVIES WITH PHOTOS */
 
 .reviews {
     text-align: center;
@@ -491,9 +482,11 @@ header ul li a{
 }
 
 
+/*FOOTER*/
+
 .site_footer {
     min-width: 1440px;
-    height: 462px;
+    min-height: 462px;
     padding: 40px 80px;
     background: #F7F7F7;
     /*display: flex;*/
@@ -592,7 +585,6 @@ header ul li a{
 
 }
 
-
 .footer_section h4 {
     color: #F6973F;
     font-family: 'DM Sans', sans-serif;
@@ -668,13 +660,10 @@ header ul li a{
 
 .footer_bottom ul {
     list-style: none;
-
+    display: flex;
+    gap: 40px;
 }
 
-.footer_bottom ul li {
-    display: inline;
-    padding-left: 188px;
-}
 
 .footer_bottom ul li a {
     text-decoration: none;
